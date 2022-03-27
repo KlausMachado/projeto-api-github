@@ -1,102 +1,101 @@
 @media (max-width: 1280px) {
-    .container {
-      flex-direction: column;
-      width: 90%;
-      border-radius: 20px;
-    }
-  
-    .container header {
-      width: 100%;
-    }
-  
-    .container header h1 {
-      font-size: 24px;
-      text-align: center;
-    }
-    .container .profile-data .info img {
-      width: 40%;
-      margin-left: 10%;
-    }
-  
-    .container .profile-data .info .numberFollowers {
-      margin-left: 5%;
-    }
+  .container {
+    flex-direction: column;
+    width: 90%;
+    border-radius: 20px;
   }
-  
-  @media (max-width: 920px) {
-    .container .profile-data .info {
-      width: 70%;
-      display: block;
-    }
-  
-    .container .profile-data .info img {
-      width: 65%;
-      margin-bottom: 15px;
-    }
-  
-    .container .profile-data .info .data {
-      text-align: center;
-      display: inline;
-      justify-content: center;
-      align-items: center;
-    }
-  
-    .container .profile-data .info .numberFollowers {
-      justify-content: space-evenly;
-      margin-top: 15px;
-    }
-  
-    .container .profile-data .info .numberFollowers div {
-      margin-left: 20px;
-    }
-  
-    .container .profile-data .repositories {
-      width: 80%;
-      display: block;
-    }
-  
-    .container header #input-search,
-    .container header #btn-search {
-      width: 100%;
-    }
+
+  .container header {
+    width: 100%;
   }
-  
-  @media (max-width: 425px) {
-    main {
-      padding: 15% 0;
-    }
-  
-    .container .profile-data .info img,
-    .container .profile-data .info .data {
-      width: 100%;
-      padding: 0;
-      margin: 0;
-    }
-  
-    .container .profile-data .repositories {
-      width: 100%;
-    }
-  
-    .container .profile-data .repositories ul li a {
-      margin: 5px;
-      width: 100%;
-    }
-  
-    .container .profile-data .repositories ul li div p {
-      display: inline-block;
-      margin-bottom: 3px;
-    }
-  
-    .container .profile-data .activities.section .activity {
-      display: inline-block;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .container .profile-data .activities.section ul li p {
-      width: 100%;
-      word-break: break-word;
-      font-size: 10px;
-    }
+
+  .container header h1 {
+    font-size: 24px;
+    text-align: center;
   }
-  
+  .container .profile-data .info img {
+    width: 40%;
+    margin-left: 10%;
+  }
+
+  .container .profile-data .info .numberFollowers {
+    margin-left: 5%;
+  }
+}
+
+@media (max-width: 920px) {
+  .container .profile-data .info {
+    width: 70%;
+    display: block;
+  }
+
+  .container .profile-data .info img {
+    width: 65%;
+    margin-bottom: 15px;
+  }
+
+  .container .profile-data .info .data {
+    text-align: center;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container .profile-data .info .numberFollowers {
+    justify-content: space-evenly;
+    margin-top: 15px;
+  }
+
+  .container .profile-data .info .numberFollowers div {
+    margin-left: 20px;
+  }
+
+  .container .profile-data .repositories {
+    width: 80%;
+    display: block;
+  }
+
+  .container header #input-search,
+  .container header #btn-search {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  main {
+    padding: 15% 0;
+  }
+
+  .container .profile-data .info img,
+  .container .profile-data .info .data {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .container .profile-data .repositories {
+    width: 100%;
+  }
+
+  .container .profile-data .repositories ul li a {
+    margin: 5px;
+    width: 100%;
+  }
+
+  .container .profile-data .repositories ul li div p {
+    display: inline-block;
+    margin-bottom: 3px;
+  }
+
+  .container .profile-data .activities.section .activity {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container .profile-data .activities.section ul li p {
+    width: 100%;
+    word-break: break-word;
+    font-size: 10px;
+  }
+}

@@ -1,9 +1,8 @@
 import { getRepositories } from "./services/repositories.js";
 import { getUser } from "./services/user.js";
-import { getActivities } from "./services/activity.js";
+import { getActivities } from "./services/activities.js";
 import { user } from "./objects/user.js";
 import { screen } from "./objects/screen.js";
-
 
 function validateEmpytInput(userName) {
   if (userName.length === 0) {
@@ -37,6 +36,7 @@ async function getUserData(userName) {
     screen.renderNotFound();
     return;
   }
+
   user.setInfo(userResponse);
   user.setRepositories(repositoriesResponse);
   user.setActivities(activitiesResponse);

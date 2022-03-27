@@ -1,33 +1,28 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  font-weight: 300;
-}
-
-img {
-  max-width: 100%;
-}
-
 body {
-  background-color: #24292e;
+  background-image: var(--gradient);
+  background-size: cover;
+  background-repeat: repeat;
+  width: 100%;
+  height: auto;
   font-family: "Kumbh Sans", sans-serif;
   text-align: center;
-  padding-bottom: 100px;
+  margin: 0;
+  padding: 50px 0;
 }
 
 main {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 50px 0 0;
+  height: auto;
+  width: 100%;
+  margin: 50px 0;
 }
 
 .devicon-github-original {
   font-size: 60px;
   margin-bottom: 30px;
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 .section {
@@ -37,13 +32,12 @@ main {
 .container {
   width: 70%; /* se for uma tela menor que 980px vai se adaptar a 70% */
   max-width: 1060px; /* quando chegar em 980px para de aumentar */
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 25px 50px -12px;
-  background-color: #fff;
+  background-color: var(--color-white);
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 30px;
-  padding: 30px;
+  padding: 0 30px;
   margin: 0 auto;
 }
 
@@ -66,7 +60,12 @@ main {
   margin: 0 auto;
   padding: 10px;
   border-radius: 7px;
-  border: 1px solid grey;
+  border: 1px solid var(--color-grey);
+}
+
+.container header #input-search:focus {
+  border-color: #351c9c;
+  outline: none;
 }
 
 .container header #btn-search {
@@ -76,13 +75,13 @@ main {
   padding: 10px;
   border-radius: 7px;
   cursor: pointer;
-  border: 1px solid grey;
+  border: 1px solid var(--color-grey);
 }
 
 .container header #btn-search:hover {
-  background-color: hotpink;
-  color: #ffffff;
-  border-color: #ffffff;
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  border-color: var(--border-pink);
 }
 
 .container .profile-data {
@@ -107,7 +106,7 @@ main {
 .container .profile-data .info img {
   width: 50%;
   border-radius: 50%;
-  border: 10px solid hotpink;
+  border: 10px solid var(--color-purple);
 }
 
 .container .profile-data .info h1 {
@@ -141,7 +140,7 @@ main {
 }
 
 .container .profile-data .info .followers {
-  background-color: hotpink;
+  background-color: var(--color-purple);
   width: 100px;
   height: 45px;
   margin-left: 5px;
@@ -149,20 +148,20 @@ main {
 
   clip-path: ellipse(50% 50%);
 
-  color: #fff;
+  color: var(--color-white);
   font-size: 18px;
   font-weight: 700;
 }
 
 .container .profile-data .info .following {
-  background-color: hotpink;
+  background-color: var(--color-pink);
   width: 100px;
   height: 45px;
   padding: 10px;
 
   clip-path: ellipse(50% 50%);
 
-  color: #fff;
+  color: var(--color-white);
   font-size: 18px;
   font-weight: 700;
 }
@@ -173,7 +172,7 @@ main {
   content: "";
   display: flex;
   width: 100%;
-  border: 0.5px solid rgba(206, 201, 201, 0.548);
+  border: 0.5px solid var(--color-line);
   margin-bottom: 50px;
 }
 
@@ -190,7 +189,7 @@ main {
 
 .container .profile-data .repositories ul li a {
   padding: 20px;
-  border: 1px solid grey;
+  border: 1px solid var(--color-grey);
   width: auto;
   margin: 20px;
   display: block;
@@ -198,12 +197,13 @@ main {
   border-radius: 7px;
   transition: 0.3s ease-in-out;
   font-weight: 700;
+  color: black;
 }
 
 .container .profile-data .repositories ul li a:hover {
-  background-color: hotpink;
-  border-color: rgb(246, 61, 154);
-  color: #fff;
+  background-color: var(--color-pink);
+  border-color: var(--border-pink);
+  color: var(--color-white);
 }
 
 .container .profile-data .repositories ul li div {
@@ -213,7 +213,7 @@ main {
 .container .profile-data .repositories ul li div p {
   display: inline;
   border: 1px solid rgb(117, 55, 231);
-  background-color: rgb(152, 109, 231);
+  background-image: linear-gradient(to right, #351c9c, #b3b2c7);
   border-radius: 5px;
   padding: 2px;
 }
@@ -232,7 +232,7 @@ main {
   content: "";
   display: flex;
   width: 100%;
-  border: 0.5px solid rgba(206, 201, 201, 0.548);
+  border: 0.5px solid var(--color-line);
   margin-bottom: 65px;
   margin-top: -65px;
 }

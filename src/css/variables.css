@@ -1,0 +1,9 @@
+:root {
+    --color-pink: #e67fc4;
+    --color-white: #fff;
+    --color-purple: #8a4cb0;
+    --color-grey: #808080;
+    --color-line: rgba(206, 201, 201, 0.548);
+    --border-pink: #f557a6c2; 
+    --gradient: linear-gradient(to right, #e67fc4, #351c9c, #070544, #272635);
+}
