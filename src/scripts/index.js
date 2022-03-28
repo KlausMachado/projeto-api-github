@@ -35,7 +35,7 @@ async function getUserData(userName) {
   if (userResponse.message === "Not Found") {
     screen.renderNotFound();
     return;
-  }
+  }  
 
   user.setInfo(userResponse);
   user.setRepositories(repositoriesResponse);

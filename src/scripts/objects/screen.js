@@ -23,21 +23,32 @@ const screen = {
         </div>  `;
 
     let repositoriesItens = "";
-    user.repositories.forEach(
-      (repo) =>
-        (repositoriesItens += `
-              <li>
-                <a href="${repo.html_url}" target="_blank">${repo.name}
-                <div>
-                  <p> &#127860; ${repo.forks_count}</p>
-                  <p> &#11088; ${repo.stargazers_count}</p>
+    user.repositories.forEach(function (repo) {
+      if (repo.language === null) {
+        repositoriesItens += `
+               <li>
+                 <a href="${repo.html_url}" target="_blank">${repo.name}
+                 <div>
+                   <p> &#127860; ${repo.forks_count}</p>
+                   <p> &#11088; ${repo.stargazers_count}</p>
                   <p> &#128064; ${repo.watchers_count}</p>
-                  <p>	&#x1F4BB; ${repo.language}</p> 
-                </div></a>
-              </li>
-            `)
-    );
-    
+                  </div></a>
+                  </li>
+                `
+      } else {
+        repositoriesItens += `
+               <li>
+                 <a href="${repo.html_url}" target="_blank">${repo.name}
+                 <div>
+                   <p> &#127860; ${repo.forks_count}</p>
+                   <p> &#11088; ${repo.stargazers_count}</p>
+                  <p> &#128064; ${repo.watchers_count}</p>
+                   <p>	&#x1F4BB; ${repo.language}</p> 
+                 </div></a>
+               </li>
+             `;
+      }
+    });
     if (user.repositories.length > 0) {
       this.userProfile.innerHTML += `
                       <div class="repositories section"> 
